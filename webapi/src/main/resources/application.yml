@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://118.184.21.40:3306/agv_db
+    username: root
+    password: wo9aishuai
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
