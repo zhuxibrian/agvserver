@@ -1,4 +1,4 @@
-package com.zx.agvserver.controller;
+package com.zx.agvserver.connector.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
