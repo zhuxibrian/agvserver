@@ -20,21 +20,21 @@ public class User {
 
     @NotBlank
     @Column(unique = true)
-    private String account;
+    private String username;
 
     @NotBlank
     private String password;
 
-    private String username;
+    private String personname;
     private String phone;
     private String email;
     private Boolean isNonLock = true;
     private Boolean isUseful = true;
 
-    @OneToMany(cascade = CascadeType.ALL, targetEntity = Role.class)
+    @ManyToMany(cascade = CascadeType.ALL, targetEntity = Role.class)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "role_id", unique = true)
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "role_id")
     )
     private List<Role> roles;
 }

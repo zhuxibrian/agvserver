@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: prod
+    active: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://118.184.21.40:3306/agv_db
@@ -8,5 +8,17 @@ spring:
     password: wo9aishuai
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
+
+# JWT
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  tokenHead: "Bearer "
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      register: "auth/register"

@@ -83,5 +83,10 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.16" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.6.0" level="project" />
   </component>
 </module>

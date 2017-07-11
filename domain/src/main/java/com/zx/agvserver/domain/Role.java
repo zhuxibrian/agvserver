@@ -1,11 +1,9 @@
 package com.zx.agvserver.domain;
 
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by zx on 2017/6/7.
@@ -13,10 +11,17 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "ROLE")
 @Data
-public class Role {
+public class Role implements GrantedAuthority {
     @Id
+    @GeneratedValue
     @Column(name="role_id")
     private Integer id;
 
-    private String role;
+    private String Authority;
+
+    @Override
+    public String getAuthority() {
+        return Authority;
+    }
+
 }
