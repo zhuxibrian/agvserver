@@ -14,6 +14,7 @@
         <module>connector</module>
         <module>dao</module>
         <module>security</module>
+        <module>common</module>
     </modules>
 
     <parent>
